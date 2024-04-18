@@ -1,0 +1,7 @@
+{
+    "python.extraPaths": [
+        "./controllers/ur5_main_controller",
+    ],
+    "python.pythonPath": "/opt/local/bin/python3.8",
+    "jupyter.jupyterServerType": "local",
+}

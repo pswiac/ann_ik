@@ -1,0 +1,42 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/kitchen/utensils/protos/Glass.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/devices/robotiq/protos/Robotiq3fGripper.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/universal_robots/protos/UR5e.proto"
+
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "EUN"
+}
+Viewpoint {
+  orientation -0.5336955522994239 0.5775034613437546 0.6177854073962863 2.0948549228861952
+  position 0.1 0.1 2
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  castShadows FALSE
+}
+Floor {
+  size 5 5
+}
+Glass {
+  translation 0.64 0.01748864 0.05
+}
+UR5e {
+  hidden rotation_17 0 0 -1 1.032382731180714e-07
+  controller "control_robot"
+  toolSlot [
+    GPS {
+      accuracy 0.01
+      noiseCorrelation 0.02
+      resolution 0.01
+    }
+    Robotiq3fGripper {
+      name "gripper"
+    }
+  ]
+}
