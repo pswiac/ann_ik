@@ -27,20 +27,6 @@ model = keras.Sequential([
     layers.Dense(y_train.shape[1])  # Output layer neurons equal to the number of target features
 ])
 
-# input_shape = X_train.shape[1]  # Number of features
-# output_shape = y_train.shape[1]  # Number of target features
-
-# # Define the input layer
-# input_layer = keras.Input(shape=(input_shape,))
-
-# # Connect each layer
-# x = layers.Dense(64, activation='relu')(input_layer)
-# x = layers.Dense(64, activation='relu')(x)
-# output_layer = layers.Dense(output_shape)(x)
-
-# # Create the model
-# model = keras.Model(inputs=input_layer, outputs=output_layer)
-
 # Model summary to check the architecture
 model.summary()
 
