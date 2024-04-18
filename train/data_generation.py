@@ -29,13 +29,6 @@ def generate_robotic_arm_solutions(num_solutions, num_joints):
         seed = np.random.randint(1, num_solutions)
 
         # Generate random inverse kinematics parameters
-        # joint_angles = random_ik_parameters(num_joints, seed)
-
-        # Calculate end effector position
-        # Transfromation_Matrices = arm.forward_kinematics(joint_angles, full_kinematics=False)
-
-        # Task_Space_Position = Transfromation_Matrices[:3, 3]
-
         task_space_position = random_ik_parameters()
         joint_angles = arm.inverse_kinematics(task_space_position)
 
