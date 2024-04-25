@@ -56,6 +56,6 @@ loss, accuracy = model.evaluate(X_test, y_test)
 print(accuracy)
 
 # Save the trained model
-model.save('../simulation/ann_model')  
-print("Model saved to '../ur5_robot_kinematics/ann_model'")
+model.save('../simulation/ann_model/keras_model.keras')  
+print("Model saved to ../simulation/ann_model/keras_model.keras")
 

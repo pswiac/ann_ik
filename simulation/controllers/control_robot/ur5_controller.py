@@ -101,11 +101,12 @@ class Ur5Controller(Robot):
         target = np.array([x, y, z])
         target_input = target[np.newaxis, :] # reshape to proper dimensions for the model
         angles_0 = self.chain.inverse_kinematics(target) # ikpy solution
-        ANN = keras.models.load_model('../../ann_model')
+        ANN = keras.models.load_model('../../ann_model/keras_model.keras')
         prediction = ANN.predict(target_input)
         angles = prediction[0]
-        print("Angles: -----------------------------------------------------------------------------------------------------")
+        print("Predicted Angles: ")
         print(prediction[0])
+        print("IKPY Angles: ")
         print(angles_0)
         return angles[1:] 
     

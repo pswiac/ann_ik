@@ -20,5 +20,5 @@ controller = Ur5Controller(ur5)
 
 if __name__ == '__main__':
     controller.initUr5()
-    controller.moveToTarget([0.40619713322367185, 0.5901879462163689, 0.02382902425644988])
+    controller.moveToTarget([2.8281939856595333, 2.4228635353386743, 1.539517377222528])
     

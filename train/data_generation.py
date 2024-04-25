@@ -53,7 +53,7 @@ def generate_robotic_arm_solutions(num_solutions, num_joints):
 def main():
     # Define the robotic arm parameters
     num_joints = 8
-    num_solutions = 1000
+    num_solutions = 10000
 
     # Generate and save robotic arm solutions
     generate_robotic_arm_solutions(num_solutions, num_joints)
