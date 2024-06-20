@@ -16,7 +16,7 @@ def generate_robotic_arm_solutions(num_solutions, num_joints):
     Generate random robotic arm solutions and save them to a CSV file.
     """
     # Create a URDF file for a 6-DOF robot arm
-    urdf_filename = "arm_urdfs/ur5e_with_gripper.urdf"  # Provide the correct path to your URDF file
+    urdf_filename = "arm_urdfs/ur5e_with_gripper.urdf"  
     arm = Chain.from_urdf_file(urdf_filename)
 
     # Initialize DataFrame to store solutions
